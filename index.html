@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="icon" href="./imagens/imagemLogo.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Gaúcho</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="redesSociais">
+            <div class="limiteNav">
+                <ul>
+                    <li><a href="https://www.facebook.com/teixeira.luiz.52" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><path d="M448 0H64C28.704 0 0 28.704 0 64v384c0 35.296 28.704 64 64 64h384c35.296 0 64-28.704 64-64V64c0-35.296-28.704-64-64-64z" style="" fill="#1976d2" data-original="#1976d2" class="hovered-path"></path><path d="M432 256h-80v-64c0-17.664 14.336-16 32-16h32V96h-64c-53.024 0-96 42.976-96 96v64h-64v80h64v176h96V336h48l32-80z" style="" fill="#fafafa" data-original="#fafafa"></path></g></svg></a></li>
+                    <li><a href="https://www.instagram.com/luiz_rotili_teixeira/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0" viewBox="0 0 1000 1000" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><linearGradient id="a" x1="146.447" x2="853.554" y1="853.554" y2="146.447" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffd521"></stop><stop offset=".055" stop-color="#ffd020"></stop><stop offset=".124" stop-color="#fec01e"></stop><stop offset=".2" stop-color="#fca71b"></stop><stop offset=".282" stop-color="#fa8316"></stop><stop offset=".368" stop-color="#f85510"></stop><stop offset=".456" stop-color="#f51e09"></stop><stop offset=".5" stop-color="#f30005"></stop><stop offset=".503" stop-color="#f20007"></stop><stop offset=".597" stop-color="#e1003b"></stop><stop offset=".688" stop-color="#d30067"></stop><stop offset=".776" stop-color="#c70088"></stop><stop offset=".859" stop-color="#bf00a0"></stop><stop offset=".936" stop-color="#bb00af"></stop><stop offset="1" stop-color="#b900b4"></stop></linearGradient><path fill="url(#a)" d="M500 1000C223.9 1000 0 776.1 0 500S223.9 0 500 0s500 223.9 500 500-223.9 500-500 500z" opacity="1" data-original="url(#a)" class="hovered-path"></path><g fill="#fff"><path d="M500 220.2c91.1 0 101.9.3 137.9 2 33.3 1.5 51.4 7.1 63.4 11.8 15.9 6.2 27.3 13.6 39.2 25.5s19.3 23.3 25.5 39.2c4.7 12 10.2 30.1 11.8 63.4 1.6 36 2 46.8 2 137.9s-.3 101.9-2 137.9c-1.5 33.3-7.1 51.4-11.8 63.4-6.2 15.9-13.6 27.3-25.5 39.2s-23.3 19.3-39.2 25.5c-12 4.7-30.1 10.2-63.4 11.8-36 1.6-46.8 2-137.9 2s-101.9-.3-137.9-2c-33.3-1.5-51.4-7.1-63.4-11.8-15.9-6.2-27.3-13.6-39.2-25.5s-19.3-23.3-25.5-39.2c-4.7-12-10.2-30.1-11.8-63.4-1.6-36-2-46.8-2-137.9s.3-101.9 2-137.9c1.5-33.3 7.1-51.4 11.8-63.4 6.2-15.9 13.6-27.3 25.5-39.2s23.3-19.3 39.2-25.5c12-4.7 30.1-10.2 63.4-11.8 36-1.7 46.8-2 137.9-2m0-61.5c-92.7 0-104.3.4-140.7 2.1-36.3 1.7-61.1 7.4-82.9 15.9C254 185.3 234.9 197 216 216c-19 19-30.6 38-39.4 60.5-8.4 21.7-14.2 46.5-15.9 82.9s-2.1 48-2.1 140.7.4 104.3 2.1 140.7c1.7 36.3 7.4 61.1 15.9 82.9C185.3 746 197 765.1 216 784c19 19 38 30.6 60.5 39.4 21.7 8.4 46.5 14.2 82.9 15.9s48 2.1 140.7 2.1 104.3-.4 140.7-2.1c36.3-1.7 61.1-7.4 82.9-15.9C746 814.7 765.1 803 784 784c19-19 30.6-38 39.4-60.5 8.4-21.7 14.2-46.5 15.9-82.9s2.1-48 2.1-140.7-.4-104.3-2.1-140.7c-1.7-36.3-7.4-61.1-15.9-82.9C814.7 254 803 234.9 784 216c-19-19-38-30.6-60.5-39.4-21.7-8.4-46.5-14.2-82.9-15.9-36.3-1.6-47.9-2-140.6-2z" fill="#ffffff" opacity="1" data-original="#ffffff"></path><path d="M500 324.7c-96.8 0-175.3 78.5-175.3 175.3S403.2 675.3 500 675.3 675.3 596.8 675.3 500 596.8 324.7 500 324.7zm0 289.1c-62.8 0-113.8-50.9-113.8-113.8s51-113.8 113.8-113.8S613.8 437.1 613.8 500s-51 113.8-113.8 113.8z" fill="#ffffff" opacity="1" data-original="#ffffff"></path><circle cx="682.2" cy="317.8" r="41" fill="#ffffff" opacity="1" data-original="#ffffff"></circle></g></g></svg></a></li>
+                    <li><a href="https://www.linkedin.com/in/luiz-rotili-teixeira-2b3b6b171/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=br" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" x="0" y="0" viewBox="0 0 112.196 112.196" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><circle cx="56.098" cy="56.097" r="56.098" style="" fill="#007ab9" data-original="#007ab9" class=""></circle><path d="M89.616 60.611v23.128H76.207V62.161c0-5.418-1.936-9.118-6.791-9.118-3.705 0-5.906 2.491-6.878 4.903-.353.862-.444 2.059-.444 3.268v22.524h-13.41s.18-36.546 0-40.329h13.411v5.715c-.027.045-.065.089-.089.132h.089v-.132c1.782-2.742 4.96-6.662 12.085-6.662 8.822 0 15.436 5.764 15.436 18.149zm-54.96-36.642c-4.587 0-7.588 3.011-7.588 6.967 0 3.872 2.914 6.97 7.412 6.97h.087c4.677 0 7.585-3.098 7.585-6.97-.089-3.956-2.908-6.967-7.496-6.967zm-6.791 59.77H41.27v-40.33H27.865v40.33z" style="" fill="#f1f2f2" data-original="#f1f2f2" class=""></path></g></svg></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navMenu">
+            <div class="limiteNav">
+                <div class="navTitle">
+                    <h1 class="mainTitle">Gaúcho do Aeroporto</h1>
+                </div>
+                <div class="logoMenu">
+                    <img src="./imagens/imagemLogo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="boxContent espacamento">
+            <h1 class="titulo">CULTURA E TURISMO</h1>
+            <p class="descricao">
+                Quatro décadas de trabalho e paixão pela cultura gaúcha!<br> Tradição viva, presente na alma do Rio Grande do Sul.
+                Através da divulgação, prática e <br>incentivo, a chama se perpetua, inspirando e construindo um futuro<br> próspero.
+            </p>
+        </div>
+        <div class="boxContent2 espacamento">
+            <div class="box">
+                <div class="containerContent">
+                    <h1 class="titulo">Foco em levar a tradição e cultura <br>gaúcha para todos</h1>
+                    <p class="descricao">
+                        Luiz Rotili Teixeira, um verdadeiro gaúcho nascido e criado nas terras férteis de Santo Augusto (RS), transformou sua paixão inabalável pela cultura gaúcha em sua missão de vida. Determinado a compartilhar os encantos e riquezas do Rio Grande do Sul com o mundo, Luiz se dedica incansavelmente a impulsionar o turismo em sua terra natal.
+                        <br>
+                        <br>
+                        Além de ser um entusiasta da Tradição Gaúcha, Luiz é um embaixador do chimarrão, levando esse símbolo icônico da cultura sulista para além das fronteiras do estado. Com um sorriso acolhedor e um mate sempre pronto para ser compartilhado, ele encanta turistas e visitantes, proporcionando uma experiência autenticamente gaúcha.
+                        <br>
+                        <br>
+                        Mas seu compromisso não se limita apenas a apresentar as belezas naturais e as tradições do Rio Grande do Sul. Luiz também é um defensor fervoroso da sustentabilidade e da preservação do meio ambiente. Por meio de iniciativas de ecoturismo e práticas ambientalmente conscientes, ele busca não apenas encantar os visitantes com a cultura gaúcha, mas também proteger e conservar as paisagens deslumbrantes que tornam o estado tão especial.
+                    </p>
+                </div>
+                <div class="containerImagem">
+                    <img src="./imagens/fotoPerfil.jpg" alt="">
+                </div>
+            </div>
+            <div class="buttons">
+                <h2 class="titulo">Destaques</h2>
+                <div class="divButtons">
+                    <h3 class="containerButtons" id="buttonMain" onclick="loadDefaultContent(this)" style="border-bottom: 2px solid;">Cultura</h3>
+                    <!-- <h3 class="containerButtons" id="buttonPag1" onclick="loadContent('paginaConteudo1.html', this)">Notícias e Eventos</h3>
+                    <h3 class="containerButtons" id="buttonPag2" onclick="loadContent('paginaConteudo2.html', this)">Posts</h3> -->
+                </div>       
+            </div>
+            <div id="content">
+                <div class="cultura">
+                    <img src="./imagens/cultura.png" alt="">
+                    <p class="descricao">
+                        A cultura gaúcha, enraizada no estado do Rio Grande do Sul, Brasil, é uma tapeçaria rica e diversa de influências históricas e étnicas. Ela tem suas raízes nas tradições dos povos indígenas que originalmente habitavam a região, como os Guaranis e Aimarás. Com a chegada dos colonizadores europeus, especialmente portugueses e espanhóis, houve uma fusão de culturas que moldou os costumes, a culinária e as tradições locais.
+
+                        Um aspecto proeminente da cultura gaúcha é o estilo de vida campeiro, centrado na pecuária e na vida rural. O gaúcho, figura emblemática dessa cultura, é frequentemente associado às vastas planícies do pampa, onde tradicionalmente se criava gado. As estâncias, fazendas típicas da região, desempenham um papel importante na preservação das tradições gaúchas, como o churrasco e a lida campeira.
+                        
+                        <br><br>
+                        A música gaúcha é outra manifestação cultural significativa. O estilo musical, conhecido como música nativista ou tradicionalismo gaúcho, retrata as paisagens, os costumes e as histórias do Rio Grande do Sul. Danças típicas, como o vaneirão, xote e chamamé, também são parte integrante dessa expressão cultural.
+                        
+                            Além disso, a indumentária tradicional gaúcha é distintiva, com o traje de gaúcho composto por bombacha (calças folgadas), botas de couro, lenço no pescoço, chapéu de aba larga e, frequentemente, um poncho. Essa vestimenta não apenas reflete a história e o clima da região, mas também é uma afirmação de identidade cultural.
+        
+                            Eventos culturais, como a Semana Farroupilha, celebram a Revolução Farroupilha e a cultura gaúcha em geral. Festivais de música, rodeios, festas tradicionais e competições de dança são comuns ao longo do ano, destacando e preservando as tradições e valores dessa rica herança cultural.
+        
+                            Em resumo, a cultura gaúcha é uma tapeçaria vibrante de tradições, música, dança, culinária e estilo de vida, enraizada na história e nas paisagens do sul do Brasil. É uma manifestação diversificada e dinâmica que continua a evoluir e ser celebrada pelos gaúchos e admiradores de todo o mundo.
+                        
+
+                        
+                    </p>
+                </div>
+                
+                
+            </div>
+
+            <div class="biografia">
+                <h1 class="titulo">Biografia</h1>
+                <div class="contentCards">
+                    <div class="cards">
+                        <div>
+                            Graduou-se Relações Públicas e Jornalismo na PUCRS, fez extensão universitária em Revolução Farroupilha e foi por sua iniciativa que fora realizada a primeira Formatura Gauchesca de Comunicação Social na PUCRS.
+                        </div>
+                        <div>
+                            Conheceu sua futura prenda no ano de 1983, num rodeio Crioulo, onde no ano de 1985, noivou numa festa realizada na churrascaria Galpão Crioulo, apadrinhado pelo saudoso professor Mozart Pereira Soares.
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            Em 1978 começou a trabalhar como autônomo, devidamete pilchado como Guia de Turismo Local, ingressando em 1979 como Convidado de Confiança na CRTUR/SETUR, onde atuou por mais de 20 anos.
+                        </div>
+                        <div>
+                            E, em 1986, no parque ao lado dessa churrascaria, numa capela montada com apoio dos colegas da PUCRS, o primeiro Casamento Típico com Missa Crioula e jantar, galinhada e vinho, fora feito no RS.
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            Luiz teve envolvimento direto na criação do parque Mauricio Sirotzki (Parque Harmonia). No ano de 1980, juntou-se aos seus amigos igualmente idealistas para se empenhar e garantir a realização e construção do mesmo.
+                        </div>
+                        <div>
+                            Autor de diversos livros sobre temas Gaúchos, pelo conjunto de seu trabalho e por sua contribuição ao turismo, que recebe da FRENTUR, a Frente Parlamentar de Turismo e o Diploma de Destaque em Turismo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="espacamento galeriaBiografias">
+            <h2 class="titulo">
+                Galeria
+            </h2>
+            <div class="carousel">
+                <img src="./imagens/fotosCarrossel/carrossel1.png" alt="">
+                <img src="./imagens/fotosCarrossel/carrossel2.png" alt="">
+                <img src="./imagens/fotosCarrossel/carrossel3.png" alt="">
+                <img src="./imagens/fotosCarrossel/carrossel4.png" alt="">
+                <img src="./imagens/fotosCarrossel/carrossel5.png" alt="">
+                <img src="./imagens/fotosCarrossel/carrossel6.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <footer class="containerFooter">
+        <div class="footer">
+            <div class="footerContent espacamento">
+                <div class="footerContent">
+                    <div class="estilizacaoFooter">
+                        <div class="navTitle">
+                            <h1>Gaúcho do Aeroporto</h1>
+                        </div>
+                        <div class="redesSociaisFooter">
+                            <a href="https://www.facebook.com/teixeira.luiz.52" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/luiz_rotili_teixeira/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/luiz-rotili-teixeira-2b3b6b171/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=br" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div class="contatoFooter">
+                            <p><i class="fas fa-phone-alt"></i> Telefone: (51) 99338-4884</p>
+                            <p><i class="fas fa-envelope"></i> Email: gauchodoaeroposto@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        loadDefaultContent();
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

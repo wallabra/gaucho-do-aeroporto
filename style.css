@@ -1,0 +1,663 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 115px;
+    margin-bottom: 40px;
+    box-shadow: 0px 6px 5px #0000000f;
+}
+
+.redesSociais {
+    display: flex;
+    justify-content: end;
+    background-color: #ebebeb;
+    padding: 8px 115px;
+}
+
+.redesSociais ul {
+    display: flex;
+    gap: 10px;
+    background-color: #f9f9f9;
+    justify-content: end;
+    background-color: #e9e9e9;
+}
+
+.containerContent {
+    width: 50%;
+}
+
+.box {
+    display: flex;
+    gap: 60px;
+}
+
+.containerContent .titulo {
+    font-size: 40px;
+    margin-bottom: 45px;
+    text-align: start;
+}
+
+.containerContent .descricao {
+    text-align: start;
+}
+
+.boxContent2 {
+    display: flex;
+    gap: 20px;
+}
+
+.containerImagem {
+    width: 50%;
+}
+
+.boxContent2 img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-left: 60px;
+    box-shadow: 4px 9px 15px #0000006b;
+    border-radius: 10px;
+}
+
+.espacamento {
+    padding: 30px 115px;
+}
+
+.navTitle h1 {
+    font-size: 46px;
+    color: #313131ad;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.39);
+    border-bottom: 1px solid #00000038;
+}
+
+.mainTitle {
+    padding-top: 6px;
+    transition: transform 1s;
+}
+.mainTitle:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    
+}
+
+
+.logoMenu img {
+    height: 65px;
+    width: auto;
+    cursor: pointer;
+    transition: transform 1s;
+    margin-top: -8px;
+}
+
+.logoMenu img:hover {
+    transform: scale(1.2);
+}
+
+.container {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.boxContent, .boxContent2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 46px;
+    color: #4b4b4b;
+    text-align: center;
+    line-height: 100%;
+}
+
+.descricao {
+    text-align: center;
+    font-size: 18px;
+    line-height: 115%;
+    font-weight: 200;
+    color: #7d7d7d;
+}
+
+.boxContent {
+    position: relative;
+    height: 300px;
+}
+
+.boxContent::before {
+    content: "";
+    background-image: url('./imagens/laçoGaucho.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.carousel {
+    padding: 40px 0;
+    border-radius: 10px;
+}
+.carousel img {
+    border-radius: 10px;
+    max-width: 300px;
+    height: 300px;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.container .slick-track {
+    display: flex;
+    gap: 25px;
+}
+
+.container .slick-dots li button:before {
+    font-size: 14px;
+}
+
+.container .slick-prev {
+    left: 25px;
+    width: 60px;
+    height: 60px;
+}
+
+.container .slick-next {
+    right: 25px;
+    width: 60px;
+    height: 60px;
+}
+
+.container .slick-prev, .container .slick-next {
+    z-index: 99;
+    border-radius: 50%;
+    border: 1px solid #a3a3a311;
+    background-color: #5959597c;
+}
+
+.galeriaBiografias .titulo {
+    text-align: start;
+}
+
+body .slick-next:before, .slick-prev:before {
+    color: #ffffff;
+}
+
+body .slick-next:focus, .slick-next:hover, .slick-prev:focus, .slick-prev:hover {
+    border: 1px solid #a3a3a34d;
+    background-color: rgb(145, 145, 145) !important;
+}
+
+.slick-dotted.slick-slider {
+    padding: 30px 80px;
+}
+
+.slick-slide {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.biografia .titulo {
+    text-align: start;
+    font-size: 44px;
+    margin-bottom: 40px;
+    margin-top: 72px;
+}
+
+.contentCards {
+    display: flex;
+    gap: 30px;
+}
+
+.contentCards .cards {
+    width: 32%;
+    border: 1px solid #5e5e5e3b;
+    padding: 10px 20px;
+    border-radius: 8px;
+    line-height: 135%;
+    font-weight: 400;
+    font-size: 18px;
+    color: #7d7d7d;
+}
+
+.cards {
+    transition: transform 1s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    box-shadow: 4px 6px 11px #00000036;
+}
+
+.cards:hover {
+    transform: scale(1.04);
+}
+
+.corFundo {
+    background-color: #d1d1d126;
+}
+
+.redesSociais svg {
+    cursor: pointer;
+    filter: drop-shadow(3px 6px 4px rgba(65, 65, 65, 0.164));
+    transition: transform 1s;
+}
+
+.redesSociais svg:hover {
+    transform: scale(1.09);
+}
+
+.containerFooter {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: end;
+    gap: 60px;
+    margin-top: 60px;
+    margin-bottom: 45px;
+}
+
+.buttons .titulo {
+    text-align: start;
+}
+
+.divButtons {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divButtons h3 {
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: 700;
+    color: #7d7d7d;
+    transition: all 1s;
+    border-bottom: 2px solid transparent;
+}
+
+.divButtons .containerButtons#buttonMain:hover,
+.divButtons .containerButtons#buttonPag1:hover,
+.divButtons .containerButtons#buttonPag2:hover {
+    border-bottom: 2px solid;
+    transition: all 1s;
+}
+
+.cultura {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: start;
+    align-items: center;
+}
+
+#content .segundaDescricao {
+    text-align: start;
+    margin-top: 35px;
+}
+
+.cultura .descricao {
+    text-align: start;
+    
+}
+
+.cultura img {
+    margin-left: 0px !important;;
+    width: 100%;
+    max-width: 600px;
+    min-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 9px 15px #0000006b;
+}
+
+.containerFooter {
+    background-color: #080808;
+    color: white;
+    padding: 20px;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .navTitle h1{
+    font-size: 45px;
+    color: #8b8b8b;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+}
+.estilizacaoFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.fa-brands, .fab{
+    color: #676767 !important;
+}
+
+.contatoFooter{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20px;
+    margin-top: 20px;
+}
+.footerContent h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.redesSociaisFooter{
+    display: flex;
+    gap: 20px;
+}
+
+.redesSociaisFooter a{
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px ;
+}
+
+.redesSociaisFooter a:first-child{
+    padding: 10px 12px;
+}
+.footerContent p {
+    font-size: 18px;
+    margin: 0;
+    color: #676767;
+}
+
+body .cardsnoticias {
+    gap: 15px;
+    justify-content: unset;
+}
+
+body .cardsnoticias img {
+    margin-left: 0px;
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+    box-shadow: none;
+}
+
+.cardsnoticias h3 {
+    text-align: center;
+    margin-top: 15px;
+    color: #3f3f3f;
+}
+
+.footer {
+    max-width: 1700px;
+    width: 100%;
+}
+
+.limiteNav {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1700px;
+    margin: auto;
+}
+
+.redesSociais .limiteNav {
+    justify-content: end;
+}
+
+.redesSociaisFooter i{
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.redesSociaisFooter a:hover{
+    transform: scale(1.08);
+    transition: all 1s;
+}
+
+.containerImagem{
+    transition: 1s;
+}
+.containerImagem:hover{
+    transform: scale(1.02);
+}
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    .navMenu, .redesSociais, .espacamento, .container {
+        padding: 8px 60px;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentCards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contentCards{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .biografia .cards{
+        width: 100%;
+    }
+
+    .cardsnoticias{
+        width: 65% !important;
+    }
+
+    .containerContent, .containerImagem {
+        width: 100%;
+    }
+    .containerImagem{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containerContent .titulo, .containerContent .descricao {
+        text-align: center;
+    }
+
+    .boxContent2 img {
+        margin-left: 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .divButtons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cultura {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerContent {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footerContent h1, .footerContent p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navMenu, .redesSociais, .espacamento, .container {
+        padding: 8px 30px;
+    }
+
+    .contatoFooter{
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .divButtons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contentCards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .boxContent {
+        height: auto;
+    }
+
+    .footerContent {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footerContent h1, .footerContent p {
+        text-align: center;
+    }
+}
+@media (max-width: 630px) {
+    .contentCards .cards{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .navMenu, .redesSociais, .espacamento, .container {
+        padding: 8px 15px;
+    }
+
+    .navTitle h1 {
+        font-size: 36px;
+    }
+
+    .containerContent .titulo {
+        font-size: 28px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .divButtons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contentCards {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .boxContent {
+        height: auto;
+    }
+
+    .footerContent {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footerContent h1, .footerContent p {
+        text-align: center;
+    }
+}

@@ -258,7 +258,7 @@
                     inertia(Date.now());
                     requestAnimationFrame(inertia);
 
-                    carousel.onmousedown = () => {
+                    carousel.ontouchstart = carousel.onmousedown = () => {
                         if (!dragging) {
                             while (zoomDiv.firstChild)
                             zoomDiv.firstChild.remove();
@@ -266,9 +266,9 @@
                         dragging = true;
                         lastMouseX = 0;
                     };
-                    carousel.onmouseup = () => dragging = false;
+                    carousel.ontouchend = carousel.ontouchcancel = carousel.onmouseup = () => dragging = false;
                     carousel.onmouseout = () => dragging = false;
-                    carousel.onmousemove = (e) => mouseX = e.clientX - carousel.getBoundingClientRect().left;
+                    carousel.ontouchmove = carousel.onmousemove = (e) => mouseX = e.clientX - carousel.getBoundingClientRect().left;
 
                     // Zoom
                     const zoomDiv = script.nextElementSibling;

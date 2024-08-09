@@ -228,6 +228,7 @@
                     function inertia(timestamp) {
                         let noTick = lastTimestamp == 0;
                         let deltaTime = (timestamp - lastTimestamp) / 1000;
+                        deltaTime = Math.min(deltaTime, 1000);
                         lastTimestamp = timestamp;
                         requestAnimationFrame(inertia);
 

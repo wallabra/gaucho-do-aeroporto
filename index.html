@@ -222,7 +222,7 @@
                     let velX = 0;
                     let lastTimestamp = 0;
                     let dragging = false;
-                    let lastMouseX = 0;
+                    let lastMouseX = null;
                     let mouseX = 0;
 
                     function inertia(timestamp) {
@@ -248,7 +248,7 @@
                             return;
                         }
                     
-                        if (lastMouseX == 0) {
+                        if (lastMouseX == null) {
                             lastMouseX = mouseX;
                             return;
                         }
@@ -266,11 +266,19 @@
                             zoomDiv.firstChild.remove();
                         }
                         dragging = true;
-                        lastMouseX = 0;
+                        lastMouseX = null;
                     };
                     carousel.ontouchend = carousel.ontouchcancel = carousel.onmouseup = () => dragging = false;
                     carousel.onmouseout = () => dragging = false;
-                    carousel.ontouchmove = carousel.onmousemove = (e) => mouseX = e.clientX - carousel.getBoundingClientRect().left;
+                    
+                    function ondrag(e) { mouseX = e.offsetX; }
+
+                    carousel.onmousemove = ondrag;
+                    carousel.ontouchdrag = (e) => {
+                        const { touches, changedTouches } = e.originalEvent ?? e;
+                        const touch = touches[0] ?? changedTouches[0];
+                        ondrag(touch);
+                    }
 
                     // Zoom
                     const zoomDiv = script.nextElementSibling;

@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     $('.carousel').slick({
         slidesToShow: 3, 
         slidesToScroll: 1, 
@@ -34,7 +34,7 @@ $(document).ready(function(){
             }
         ]
     });
-});
+});*/
 
 let elementoAnterior = null;
 let originalContent = document.getElementById('content').innerHTML;

@@ -100,6 +100,14 @@ window.onload = () => {
         lastMouseX = mouseX;
         velX -= deltaMouse * deltaTime * 200;
     }
+
+    function thrustCarousel(toward) {
+        velX += toward;
+    }
+
+    document.getElementById('carousel-right').onclick = function() { thrustCarousel(1000); }
+    document.getElementById('carousel-left').onclick = function() { thrustCarousel(-1000); }
+    
     inertia(Date.now());
     requestAnimationFrame(inertia);
 

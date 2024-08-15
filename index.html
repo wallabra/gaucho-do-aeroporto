@@ -153,8 +153,6 @@
                 <img src="./imagens/fotosCarrossel/carrossel6.png" alt="">
             </div>
             <script>
-                const script = document.currentScript;
-                
                 window.onload = () => {
                     // (adapted from https://stackoverflow.com/questions/13435604/getting-an-elements-inner-height)
                     function getInnerSize(elm) {
@@ -166,7 +164,7 @@
                     }
                 
                     // Limpar conteúdos e elencar imagens
-                    const carousel = script.previousElementSibling;
+                    const carousel = document.getElementById('carousel');
                     const images = Array.from(carousel.children);
                     while (carousel.firstChild) carousel.firstChild.remove();
 
@@ -284,7 +282,7 @@
                     }
 
                     // Zoom
-                    const zoomDiv = script.nextElementSibling;
+                    const zoomDiv = document.getElementById('zoomDiv');
                     let zoomedImage = null;
                     function click(e) {
                         if (dragging || Math.abs(velX) > 100) return;
@@ -321,7 +319,7 @@
                     //carousel.onclick = click;
                 }
             </script>
-            <div style="width: 100%; padding: 20px;">
+            <div style="width: 100%; padding: 20px;" id="zoomDiv">
             </div>
         </div>
         

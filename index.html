@@ -202,7 +202,7 @@
                         for (let i = 0; i < maxImagePerWidth; i++) {
                             const which = ((Math.floor(start + i) % images.length) + images.length) % images.length;
                             const image = images[which];
-                            ctx.drawImage(images[which], drawFirst + i * interval, margin, size, size);
+                            ctx.drawImage(images[which], drawFirst + i * interval, margin, image.width > image.height ? size : (size * image.width / image.height), image.width > image.height ? size * image.height / image.width : size);
                         }
                     }
                     draw();
@@ -235,7 +235,8 @@
                         if (noTick || deltaTime == 0) {
                             return;
                         }
-                
+
+                        while (Math.abs(velX) > 3000) velX /= 1.5;
                         camX += velX * deltaTime;
                         velX -= velX * 2 * deltaTime;
                         if (Math.abs(velX) < 2) {

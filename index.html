@@ -276,9 +276,9 @@
                     carousel.onmousemove = ondrag;
                     carousel.ontouchmove = (e) => {
                         const { touches, changedTouches, targetTouches } = e.originalEvent ?? e;
-                        const touch = touches[0] ?? changedTouches[0] ?? targetTouches[0];
+                        const touch = [touches[0], changedTouches[0], targetTouches[0]].find((o) => o != null && o.offsetX != null);
                         if (touch.offsetX == null) {
-                            carousel.innerHTML = Object.keys(touch).join(', ');
+                            carousel.innerHTML = "> " + Object.keys(touch).join(', ');
                         } else {
                             ondrag(touch);
                         }

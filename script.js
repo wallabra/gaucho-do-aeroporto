@@ -123,12 +123,13 @@ window.onload = () => {
     carousel.onmouseout = () => dragging = false;
     
     function ondrag(e) { mouseX = e.offsetX; }
+    const debugDiv = document.getElementById('debugDiv');
 
     carousel.onmousemove = ondrag;
     carousel.ontouchmove = (e) => {
         const { touches, changedTouches, targetTouches } = e.originalEvent ?? e;
         const touch = [touches[0], changedTouches[0], targetTouches[0]].find((o) => o != null && o.offsetX != null) ?? {};
-        zoomDiv.innerHTML = "> " + Object.keys(touch).join(', ');
+        debugDiv.innerHTML = "> " + Object.keys(touch).join(', ');
         if (touch.offsetX != null) {
             ondrag(touch);
         }

@@ -292,10 +292,10 @@ table {
 }
 
 .carousel-button {
-  margin: 15px;
+  margin: 10px;
   border-radius: 5px;
   background-color: #5563;
-  padding: 5px;
+  padding: 15px;
   margin-right: 1.5em;
   display: inline-block;
   font-size: 1.3em;

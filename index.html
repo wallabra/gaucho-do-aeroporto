@@ -274,7 +274,7 @@
                     function ondrag(e) { mouseX = e.offsetX; }
 
                     carousel.onmousemove = ondrag;
-                    carousel.ontouchdrag = (e) => {
+                    carousel.ontouchmove = (e) => {
                         const { touches, changedTouches } = e.originalEvent ?? e;
                         const touch = touches[0] ?? changedTouches[0];
                         ondrag(touch);

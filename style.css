@@ -479,8 +479,11 @@ body .slick-next:focus,
 .cultura img {
   margin-left: 0px !important;
   width: 100%;
-  max-width: 600px;
-  min-width: 600px;
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 40vmin;
+  max-height: 70vmin;
+  width: auto;
   height: auto;
   border-radius: 10px;
   box-shadow: 4px 9px 15px #0000006b;

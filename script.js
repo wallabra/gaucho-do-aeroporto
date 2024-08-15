@@ -45,7 +45,9 @@ window.onload = () => {
         for (let i = 0; i < maxImagePerWidth; i++) {
             const which = ((Math.floor(start + i) % images.length) + images.length) % images.length;
             const image = images[which];
-            ctx.drawImage(images[which], drawFirst + i * interval, margin, image.width > image.height ? size : (size * image.width / image.height), image.width > image.height ? size * image.height / image.width : size);
+            const drawWidth = image.width > image.height ? size : (size * image.width / image.height),
+                  drawHeight = image.width > image.height ? size * image.height / image.width : size;
+            ctx.drawImage(images[which], drawFirst + i * interval, margin + (size - drawHeight) / 2, drawWidth , drawHeight);
         }
     }
     draw();

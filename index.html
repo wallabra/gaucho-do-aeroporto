@@ -277,8 +277,12 @@
                     carousel.ontouchmove = (e) => {
                         const { touches, changedTouches } = e.originalEvent ?? e;
                         const touch = touches[0] ?? changedTouches[0];
-                        //ondrag(touch);
-                        carousel.innerHTML = JSON.stringify(touch);
+                        if (touch.offsetX == null) {
+                            carousel.innerHTML += "a";
+                            return;
+                        }
+                        ondrag(touch);
+                        //carousel.innerHTML = JSON.stringify(touch);
                     }
 
                     // Zoom

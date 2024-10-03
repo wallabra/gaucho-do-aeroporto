@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <link rel="icon" href="./imagens/imagemLogo.jpg" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -328,46 +331,15 @@
 
       <div class="espacamento galeriaBiografias">
         <h2 class="titulo" style="margin-bottom: 1em;">Galeria</h2>
-        <style>
-          .carouselImage {
-            transition: width 0.5s;
-            width: 0%;
-            height: auto;
-            margin: 0 auto;
-            display: table;
-          }
 
-          .carouselImage.grow {
-            width: 50%;
-          }
-        </style>
-
-        <div
-          class="carousel"
-          id="carousel"
-          style="
-            height: 250px;
-            width: 100%;
-            padding: 10px;
-            background-color: #3331;
-          "
-        >
-          <img src="./imagens/fotosCarrossel/carrossel1.png" alt="" />
-          <img src="./imagens/fotosCarrossel/carrossel2.png" alt="" />
-          <img src="./imagens/fotosCarrossel/carrossel3.png" alt="" />
-          <img src="./imagens/fotosCarrossel/carrossel4.png" alt="" />
-          <img src="./imagens/fotosCarrossel/carrossel5.png" alt="" />
-          <img src="./imagens/fotosCarrossel/carrossel6.png" alt="" />
+        <div class="carousel">
+            <img src="./imagens/fotosCarrossel/carrossel1.png" alt="">
+            <img src="./imagens/fotosCarrossel/carrossel2.png" alt="">
+            <img src="./imagens/fotosCarrossel/carrossel3.png" alt="">
+            <img src="./imagens/fotosCarrossel/carrossel4.png" alt="">
+            <img src="./imagens/fotosCarrossel/carrossel5.png" alt="">
+            <img src="./imagens/fotosCarrossel/carrossel6.png" alt="">
         </div>
-        <!-- Controles do carrossel -->
-        <span id="carousel-left" class="carousel-button">&lt;</span>
-        <span id="carousel-right" class="carousel-button">&gt;</span>
-
-        <div style="width: 100%; padding: 20px" id="zoomDiv"></div>
-        <div
-          style="width: 100%: padding: 20px; border-left: 30px; box-sizing: margin-box;"
-          id="debugDiv"
-        ></div>
       </div>
     </div>
     <footer class="containerFooter">
